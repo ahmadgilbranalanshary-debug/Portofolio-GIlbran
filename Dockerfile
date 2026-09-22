@@ -18,7 +18,7 @@ COPY . /var/www/html
 
 RUN composer install --no-dev --optimize-autoloader
 
-# Buat folder database dan file SQLite kosong, lalu atur izin akses
+# Buat database SQLite dan jalankan migrasi
 RUN mkdir -p /var/www/html/database \
     && touch /var/www/html/database/database.sqlite \
     && mkdir -p /var/www/html/storage/framework/sessions \
@@ -29,4 +29,5 @@ RUN mkdir -p /var/www/html/database \
 
 EXPOSE 8080
 
-CMD ["php", "artisan", "serve", "--host=0.0.0.0", "--port=8080"]
+# Jalankan migrasi lalu jalankan server
+CMD php artisan migrate --force && php artisan serve --host=0.0.0.0 --port=8080
