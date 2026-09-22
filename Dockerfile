@@ -11,7 +11,10 @@ RUN apt-get update && apt-get install -y \
 
 RUN docker-php-ext-install pdo_mysql gd
 
-RUN a2dismod mpm_event mpm_worker && a2enmod mpm_prefork
+# Hapus konfigurasi MPM bawaan yang ganda dan aktifkan prefork
+RUN rm -f /etc/apache2/mods-enabled/mpm_event.* \
+    && rm -f /etc/apache2/mods-enabled/mpm_worker.* \
+    && a2enmod mpm_prefork
 
 COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
 
