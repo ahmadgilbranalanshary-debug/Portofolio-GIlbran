@@ -11,12 +11,13 @@ RUN apt-get update && apt-get install -y \
 
 RUN docker-php-ext-install pdo_mysql gd
 
+RUN a2dismod mpm_event mpm_worker && a2enmod mpm_prefork
+
 COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
 
 WORKDIR /var/www/html
 COPY . /var/www/html
 
-# Jalankan composer install saat build
 RUN composer install --no-dev --optimize-autoloader
 
 RUN chown -R www-data:www-data /var/www/html/storage /var/www/html/bootstrap/cache
