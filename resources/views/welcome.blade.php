@@ -49,9 +49,17 @@
                 Saya adalah pelajar SMK Muhammadiyah 2 Kota Kediri yang memiliki ketertarikan pada jaringan komputer, fiber optik, splicing, dan troubleshooting jaringan.
             </p>
             <div class="flex flex-col sm:flex-row justify-center gap-4">
-                <a href="#about" class="px-8 py-3 border border-black text-black font-medium rounded hover:bg-gray-100 transition">Tentang Saya</a>
-                <a href="#contact" class="px-8 py-3 bg-black text-white font-medium rounded hover:bg-gray-800 transition shadow-lg">Hubungi Saya</a>
-            </div>
+    <a href="#about" class="px-8 py-3 border border-black text-black font-medium rounded">Tentang Saya</a>
+    <a href="#contact" class="px-8 py-3 bg-black text-white font-medium rounded">Hubungi Saya</a>
+    
+    <!-- TOMBOL UNDUH CV -->
+    <a href="{{ asset('cv-ahmad-gilbran.pdf') }}" download class="px-8 py-3 bg-emerald-600 text-white font-medium rounded hover:bg-emerald-700 transition inline-flex items-center justify-center gap-2">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+        </svg>
+        <span>Unduh CV</span>
+    </a>
+        </div>
         </div>
     </section>
 
@@ -164,7 +172,7 @@
 
             <div class="mt-12 flex justify-center space-x-6">
                 <!-- Tombol WhatsApp dengan kode negara Indonesia -->
-                <a href="https://wa.me/6281200000000" target="_blank" class="flex items-center gap-2 bg-[#25D366] text-white px-6 py-3 rounded-full hover:bg-green-600 transition shadow-sm">
+                <a href="https://wa.me/6285946300565" target="_blank" class="flex items-center gap-2 bg-[#25D366] text-white px-6 py-3 rounded-full hover:bg-green-600 transition shadow-sm">
                     <i data-lucide="message-circle" class="w-5 h-5"></i>
                     <span class="font-medium">WhatsApp</span>
                 </a>
