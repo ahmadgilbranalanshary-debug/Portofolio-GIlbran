@@ -114,39 +114,84 @@
         </div>
     </section>
 
-    <!-- Experience & Achievement Section -->
-    <section id="experience" class="py-20 bg-white">
-        <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-12">
-            <!-- Experience -->
-            <div>
-                <h2 class="text-3xl font-bold mb-8 flex items-center gap-2">
-                    <i data-lucide="briefcase" class="w-6 h-6"></i> Pengalaman
-                </h2>
-                <div class="border-l-2 border-gray-200 pl-6 relative">
+   <!-- Experience & Achievement Section -->
+<section id="experience" class="py-20 bg-white">
+    <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-12">
+        <!-- Experience -->
+        <div>
+            <h2 class="text-3xl font-bold mb-8 flex items-center gap-2">
+                <i data-lucide="briefcase" class="w-6 h-6"></i> Pengalaman
+            </h2>
+            <div class="border-l-2 border-gray-200 pl-6 relative space-y-6">
+                <div>
                     <div class="absolute w-3 h-3 bg-black rounded-full -left-[7px] top-2"></div>
                     <h3 class="font-bold text-xl">PT Jatara</h3>
-                    <p class="text-gray-500 text-sm mb-2">Praktik Kerja / Pengalaman Industri</p>
-                </div>
-            </div>
-            <!-- Achievement -->
-            <div>
-                <h2 class="text-3xl font-bold mb-8 flex items-center gap-2">
-                    <i data-lucide="award" class="w-6 h-6"></i> Prestasi
-                </h2>
-                <div class="bg-gray-50 p-6 rounded-xl border border-gray-100">
-                    <div class="flex items-start gap-4">
-                        <div class="bg-black p-3 rounded-lg text-white">
-                            <i data-lucide="medal" class="w-6 h-6"></i>
-                        </div>
-                        <div>
-                            <h3 class="font-bold text-lg">Juara 1 LKS Tingkat Kabupaten</h3>
-                            <p class="text-gray-500 text-sm mt-1">Lomba Kompetensi Siswa bidang IT / Jaringan.</p>
-                        </div>
-                    </div>
+                    <p class="text-gray-500 text-sm mb-2">Praktik Kerja Lapangan (PKL) • Teknisi Jaringan</p>
+                    <ul class="list-disc list-inside text-gray-600 space-y-1 text-sm mt-2">
+                        <li>Penyambungan serat optik (*Fusion Splicing*) & pengukuran OTDR.</li>
+                        <li>*Troubleshooting* & perbaikan instalasi kabel LAN / Fiber Optik.</li>
+                        <li>Pemasangan & konfigurasi perangkat ONT pelanggan.</li>
+                    </ul>
                 </div>
             </div>
         </div>
-    </section>
+
+        <!-- Achievement -->
+        <div>
+            <h2 class="text-3xl font-bold mb-8 flex items-center gap-2">
+                <i data-lucide="award" class="w-6 h-6"></i> Prestasi
+            </h2>
+            <div class="bg-gray-50 p-6 rounded-xl border border-gray-100">
+                <h3 class="font-bold text-xl mb-1">Juara Lomba Kompetensi Siswa (LKS)</h3>
+                <p class="text-gray-500 text-sm mb-3">Bidang Teknik Komputer & Jaringan</p>
+                <ul class="list-disc list-inside text-gray-600 space-y-1 text-sm">
+                    <li>Desain & simulasi topologi jaringan.</li>
+                    <li>Pengkabelan terstruktur (*Structured Cabling*).</li>
+                    <li>Konfigurasi routing & *network security*.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Gallery / Projects Section -->
+<section id="projects" class="py-20 bg-gray-50">
+    <div class="max-w-6xl mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-4 flex items-center justify-center gap-2">
+            <i data-lucide="image" class="w-6 h-6"></i> Galeri Kegiatan & Proyek
+        </h2>
+        <p class="text-gray-500 text-center mb-12">Dokumentasi hasil praktikum, kompetisi, dan kegiatan lapangan.</p>
+
+        <div class="grid md:grid-cols-3 gap-6">
+            <!-- Foto 1: Splicing -->
+            <div class="bg-white rounded-xl overflow-hidden shadow-sm border border-gray-200 hover:shadow-md transition">
+                <img src="{{ asset('images/splicing.jpeg') }}" alt="Penyambungan Serat Optik" class="w-full h-48 object-cover">
+                <div class="p-5">
+                    <h4 class="font-bold text-lg mb-1">Penyambungan Serat Optik</h4>
+                    <p class="text-gray-600 text-sm">Praktikum penyambungan kabel fiber optik menggunakan Fusion Splicer dengan presisi tinggi.</p>
+                </div>
+            </div>
+
+            <!-- Foto 2: OTDR -->
+            <div class="bg-white rounded-xl overflow-hidden shadow-sm border border-gray-200 hover:shadow-md transition">
+                <img src="{{ asset('images/otdr.jpeg') }}" alt="Pengujian OTDR" class="w-full h-48 object-cover">
+                <div class="p-5">
+                    <h4 class="font-bold text-lg mb-1">Pengujian Redaman OTDR</h4>
+                    <p class="text-gray-600 text-sm">Pengujian dan analisis kualitas saluran kabel fiber optik untuk memastikan sinyal stabil.</p>
+                </div>
+            </div>
+
+            <!-- Foto 3: LKS -->
+            <div class="bg-white rounded-xl overflow-hidden shadow-sm border border-gray-200 hover:shadow-md transition">
+                <img src="{{ asset('images/lks.jpeg') }}" alt="Kompetisi LKS TKJ" class="w-full h-48 object-cover">
+                <div class="p-5">
+                    <h4 class="font-bold text-lg mb-1">Kompetisi LKS TKJ</h4>
+                    <p class="text-gray-600 text-sm">Dokumentasi penerimaan kejuaraan LKS bidang teknik jaringan komputer.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
     <!-- Contact Section -->
     <section id="contact" class="py-20 bg-gray-50">
