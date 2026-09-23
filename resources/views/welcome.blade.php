@@ -3,14 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ahmad Gilbran Al Anshary | Portfolio</title>
-    <meta name="description" content="Portfolio Ahmad Gilbran Al Anshary, pelajar Teknik Komputer dan Jaringan yang memiliki minat pada fiber optik, splicing, dan network troubleshooting.">
-    <!-- Tailwind CSS via CDN untuk kemudahan langsung jalan -->
+    <title>Ahmad Gilbran - Teknisi Jaringan & Fiber Optik</title>
+    
+    <!-- Meta SEO & Social Media (Preview WhatsApp & LinkedIn) -->
+    <meta name="description" content="Portofolio Ahmad Gilbran - Pelajar TKJ & Teknisi Jaringan berpengalaman dalam Fiber Optik, OTDR, dan Troubleshooting Jaringan.">
+    <meta property="og:title" content="Ahmad Gilbran - Portfolio Teknisi Jaringan">
+    <meta property="og:description" content="Lihat pengalaman PKL, proyek Fiber Optik, dan pencapaian LKS Ahmad Gilbran.">
+    <meta property="og:image" content="{{ asset('images/splicing.jpeg') }}">
+    <meta property="og:url" content="https://portofolio-gilbran-production.up.railway.app/">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}">
+
+    <!-- Tailwind CSS & Lucide Icons -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <style> 
+    
+    <style>
         body { font-family: 'Inter', sans-serif; }
         .fade-in { animation: fadeIn 1s ease-in; }
         @keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
@@ -230,10 +240,17 @@
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="bg-black text-white py-8 text-center text-sm text-gray-400">
-        <p>&copy; 2026 Ahmad Gilbran Al Anshary. Dibuat menggunakan Laravel & Tailwind CSS.</p>
-    </footer>
+    <!-- ================= FOOTER ================= -->
+<footer class="bg-gray-900 text-white py-8 border-t border-gray-800">
+    <div class="max-w-6xl mx-auto px-4 text-center">
+        <p class="text-gray-400 text-sm">
+            &copy; {{ date('Y') }} <span class="text-white font-semibold">Ahmad Gilbran</span>. All rights reserved.
+        </p>
+        <p class="text-gray-500 text-xs mt-2">
+            Built with Laravel & Tailwind CSS
+        </p>
+    </div>
+</footer>
 
     <script>
         // Render ikon Lucide
