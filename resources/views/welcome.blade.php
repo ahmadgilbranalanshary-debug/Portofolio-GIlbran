@@ -6,9 +6,9 @@
     <title>Ahmad Gilbran - Network & Fiber Optik Specialist</title>
 
     <!-- Meta SEO & Social Media -->
-    <meta name="description" content="Portofolio Ahmad Gilbran - Specialist Network, Fiber Optik Splicing, OTDR, & Troubleshooting Jaringan di Kediri & Sekitarnya.">
+    <meta name="description" content="Portofolio Ahmad Gilbran - Specialist Network, Fiber Optik Splicing, OTDR, & Monitoring ISP di Kediri & Sekitarnya.">
     <meta property="og:title" content="Ahmad Gilbran - Network Specialist Portfolio">
-    <meta property="og:description" content="Eksplorasi pengalaman PKL PT Jatara, Sertifikasi, Proyek Jaringan, dan Dokumentasi Praktikum Fiber Optik Ahmad Gilbran.">
+    <meta property="og:description" content="Eksplorasi pengalaman PKL PT Jatara, Sistem Monitoring & Manajemen ISP, Sertifikasi, dan Dokumentasi Praktikum Fiber Optik Ahmad Gilbran.">
     <meta property="og:image" content="{{ asset('images/splicing.jpeg') }}">
     <meta property="og:url" content="https://portofolio-gilbran-production.up.railway.app/">
 
@@ -48,12 +48,6 @@
     </style>
 </head>
 <body class="bg-slate-50 text-slate-900 dark:bg-slate-950 dark:text-slate-100 antialiased selection:bg-sky-500 selection:text-white transition-colors duration-300 min-h-screen flex flex-col">
-
-    <!-- TOAST NOTIFICATION -->
-    <div id="toast" class="fixed bottom-6 right-6 z-50 transform translate-y-20 opacity-0 transition-all duration-300 pointer-events-none flex items-center gap-3 bg-slate-900 text-white dark:bg-white dark:text-slate-900 px-5 py-3 rounded-2xl shadow-2xl border border-slate-700/50">
-        <i data-lucide="check-circle-2" class="w-5 h-5 text-emerald-400 dark:text-emerald-600"></i>
-        <span id="toast-message" class="text-sm font-semibold">Teks berhasil disalin!</span>
-    </div>
 
     <!-- NAVBAR -->
     <nav class="fixed top-0 left-0 right-0 bg-white/80 dark:bg-slate-900/80 backdrop-blur-md border-b border-slate-200/80 dark:border-slate-800/80 z-40 transition-colors duration-300">
@@ -125,7 +119,7 @@
             </div>
 
             <p class="mt-4 text-base sm:text-lg text-slate-600 dark:text-slate-400 max-w-2xl mx-auto leading-relaxed">
-                Fokus pada penyambungan serat optik presisi tinggi (<em class="not-italic text-slate-900 dark:text-white font-medium">Fusion Splicing</em>), analisa redaman (<em class="not-italic text-slate-900 dark:text-white font-medium">OTDR</em>), serta manajemen Router & Switch MikroTik/Cisco.
+                Fokus pada penyambungan serat optik presisi tinggi (<em class="not-italic text-slate-900 dark:text-white font-medium">Fusion Splicing</em>), analisa redaman (<em class="not-italic text-slate-900 dark:text-white font-medium">OTDR</em>), sistem <em class="not-italic text-slate-900 dark:text-white font-medium">Monitoring ISP</em>, serta manajemen Router & Switch MikroTik/Cisco.
             </p>
             
             <!-- Action Buttons -->
@@ -142,9 +136,10 @@
                     <i data-lucide="eye" class="w-4 h-4 text-sky-500"></i> Intip CV
                 </button>
 
-                <button onclick="copyToClipboard('ahmadgilbranalanshary@gmail.com', 'Email berhasil disalin!')" class="p-3 bg-white dark:bg-slate-900 hover:bg-slate-50 dark:hover:bg-slate-800 text-slate-600 dark:text-slate-400 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm transition" title="Salin Email">
-                    <i data-lucide="copy" class="w-5 h-5"></i>
-                </button>
+                <!-- Tombol Langsung Masuk Gmail -->
+                <a href="mailto:ahmadgilbranalanshary@gmail.com" class="p-3 bg-white dark:bg-slate-900 hover:bg-slate-50 dark:hover:bg-slate-800 text-slate-600 dark:text-slate-400 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm transition" title="Kirim Email Langsung">
+                    <i data-lucide="mail" class="w-5 h-5 text-red-500"></i>
+                </a>
             </div>
         </div>
     </section>
@@ -214,11 +209,11 @@
                 <!-- Service 3 -->
                 <div class="p-6 bg-white dark:bg-slate-900 rounded-2xl border border-slate-200/80 dark:border-slate-800/80 shadow-sm hover:shadow-md transition">
                     <div class="w-12 h-12 rounded-xl bg-indigo-500/10 text-indigo-600 dark:text-indigo-400 flex items-center justify-center mb-4">
-                        <i data-lucide="settings text-600" class="w-6 h-6"></i>
+                        <i data-lucide="layout-dashboard" class="w-6 h-6"></i>
                     </div>
-                    <h3 class="font-bold text-lg mb-2">Setting MikroTik & Cisco</h3>
+                    <h3 class="font-bold text-lg mb-2">Monitoring ISP & Network</h3>
                     <p class="text-xs text-slate-500 dark:text-slate-400 leading-relaxed">
-                        Konfigurasi Bandwidth Management (Queue), Routing OSPF, Multi-VLAN, Hotspot Voucher, serta pengamanan Firewall NAT.
+                        Pengembangan dashboard monitoring trafik ISP, pelacakan status pelanggan real-time, GIS live maps, serta manajemen ticketing teknisi.
                     </p>
                 </div>
 
@@ -364,11 +359,37 @@
                     <i data-lucide="folder-git-2" class="w-4 h-4"></i> Project Portfolio
                 </div>
                 <h2 class="text-3xl font-bold">Proyek Jaringan & Implementasi</h2>
-                <p class="text-slate-500 dark:text-slate-400 text-sm mt-2">Daftar proyek teknis yang pernah dirancang dan diimplementasikan</p>
+                <p class="text-slate-500 dark:text-slate-400 text-sm mt-2">Daftar proyek teknis dan sistem jaringan yang pernah dikembangkan</p>
             </div>
 
             <div class="grid md:grid-cols-2 gap-6">
-                <!-- Proyek 1 -->
+                <!-- Proyek 1 (JUDUL BARU: Sistem monitoring & manajemen ISP) -->
+                <div class="p-6 rounded-2xl bg-slate-50 dark:bg-slate-950 border-2 border-sky-500/30 dark:border-sky-500/20 shadow-md hover:shadow-xl transition duration-300 flex flex-col justify-between md:col-span-2 lg:col-span-1">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="px-3 py-1 rounded-lg bg-sky-500/10 text-sky-600 dark:text-sky-400 text-xs font-bold flex items-center gap-1.5">
+                                <i data-lucide="activity" class="w-3.5 h-3.5"></i> ISP Management System
+                            </span>
+                            <span class="text-xs font-medium text-emerald-600 dark:text-emerald-400 bg-emerald-500/10 px-2.5 py-1 rounded-full flex items-center gap-1">
+                                <i data-lucide="check-circle" class="w-3.5 h-3.5"></i> Live / Selesai
+                            </span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2 text-slate-900 dark:text-white">Sistem monitoring & manajemen ISP</h3>
+                        <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed mb-4">
+                            Pengembangan dashboard pemantauan jaringan ISP real-time: monitoring trafik total bandwidth (1 Gbps+), pelacakan status pelanggan (Online/Offline/Gangguan), GIS Live Maps ODP, serta integrasi sistem Tagihan (Billing) dan Ticketing Teknisi.
+                        </p>
+                    </div>
+                    <div>
+                        <div class="flex flex-wrap gap-2 pt-4 border-t border-slate-200/60 dark:border-slate-800/60">
+                            <span class="text-[11px] font-semibold px-2.5 py-1 rounded-md bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-sky-600 dark:text-sky-400">ISP Monitor</span>
+                            <span class="text-[11px] font-semibold px-2.5 py-1 rounded-md bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-300">Bandwidth Analytics</span>
+                            <span class="text-[11px] font-semibold px-2.5 py-1 rounded-md bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-300">Live Maps GIS</span>
+                            <span class="text-[11px] font-semibold px-2.5 py-1 rounded-md bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-300">Billing & Tickets</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Proyek 2 -->
                 <div class="p-6 rounded-2xl bg-slate-50 dark:bg-slate-950 border border-slate-200/80 dark:border-slate-800/80 shadow-sm hover:shadow-md transition duration-300 flex flex-col justify-between">
                     <div>
                         <div class="flex items-center justify-between mb-4">
@@ -377,7 +398,7 @@
                         </div>
                         <h3 class="text-xl font-bold mb-2">Desain & Instalasi Jaringan FTTH (Fiber to the Home)</h3>
                         <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed mb-4">
-                            Perancangan alur kable serat optik dari ODC ke ODP, penyambungan core presisi menggunakan Fusion Splicer, serta instalasi dan pembacaan signal redaman ONT pelanggan.
+                            Perancangan alur kabel serat optik dari ODC ke ODP, penyambungan core presisi menggunakan Fusion Splicer, serta instalasi dan pembacaan signal redaman ONT pelanggan.
                         </p>
                     </div>
                     <div>
@@ -390,7 +411,7 @@
                     </div>
                 </div>
 
-                <!-- Proyek 2 -->
+                <!-- Proyek 3 -->
                 <div class="p-6 rounded-2xl bg-slate-50 dark:bg-slate-950 border border-slate-200/80 dark:border-slate-800/80 shadow-sm hover:shadow-md transition duration-300 flex flex-col justify-between">
                     <div>
                         <div class="flex items-center justify-between mb-4">
@@ -412,7 +433,7 @@
                     </div>
                 </div>
 
-                <!-- Proyek 3 -->
+                <!-- Proyek 4 -->
                 <div class="p-6 rounded-2xl bg-slate-50 dark:bg-slate-950 border border-slate-200/80 dark:border-slate-800/80 shadow-sm hover:shadow-md transition duration-300 flex flex-col justify-between">
                     <div>
                         <div class="flex items-center justify-between mb-4">
@@ -430,28 +451,6 @@
                             <span class="text-[11px] font-semibold px-2.5 py-1 rounded-md bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-300">Multi-VLAN</span>
                             <span class="text-[11px] font-semibold px-2.5 py-1 rounded-md bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-300">OSPF Routing</span>
                             <span class="text-[11px] font-semibold px-2.5 py-1 rounded-md bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-300">ACL Security</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Proyek 4 -->
-                <div class="p-6 rounded-2xl bg-slate-50 dark:bg-slate-950 border border-slate-200/80 dark:border-slate-800/80 shadow-sm hover:shadow-md transition duration-300 flex flex-col justify-between">
-                    <div>
-                        <div class="flex items-center justify-between mb-4">
-                            <span class="px-3 py-1 rounded-lg bg-purple-500/10 text-purple-600 dark:text-purple-400 text-xs font-bold">Linux Server</span>
-                            <span class="text-xs font-medium text-slate-400 flex items-center gap-1"><i data-lucide="check-circle" class="w-3.5 h-3.5 text-emerald-500"></i> Home Lab</span>
-                        </div>
-                        <h3 class="text-xl font-bold mb-2">Setup Web & DNS Server Berbasis Ubuntu Server</h3>
-                        <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed mb-4">
-                            Deployment server lokal menggunakan OS Ubuntu Server CLI: instalasi Apache/Nginx Web Server, konfigrasi domain lokal BIND9 DNS Server, serta monitoring log lalu lintas jaringan.
-                        </p>
-                    </div>
-                    <div>
-                        <div class="flex flex-wrap gap-2 pt-4 border-t border-slate-200/60 dark:border-slate-800/60">
-                            <span class="text-[11px] font-semibold px-2.5 py-1 rounded-md bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-300">Ubuntu Server</span>
-                            <span class="text-[11px] font-semibold px-2.5 py-1 rounded-md bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-300">Apache/Nginx</span>
-                            <span class="text-[11px] font-semibold px-2.5 py-1 rounded-md bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-300">BIND9 DNS</span>
-                            <span class="text-[11px] font-semibold px-2.5 py-1 rounded-md bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-300">SSH & CLI</span>
                         </div>
                     </div>
                 </div>
@@ -489,7 +488,7 @@
         </div>
     </section>
 
-    <!-- TESTIMONIALS SECTION (5 ORANG REKOMENDASI) -->
+    <!-- TESTIMONIALS SECTION -->
     <section id="testimonials" class="py-20 bg-white dark:bg-slate-900 border-t border-slate-200/60 dark:border-slate-800/60 transition-colors duration-300">
         <div class="max-w-6xl mx-auto px-4">
             <div class="text-center mb-12">
@@ -497,11 +496,57 @@
                     <i data-lucide="quote" class="w-4 h-4"></i> Testimonials & Endorsements
                 </div>
                 <h2 class="text-3xl font-bold">Ulasan & Rekomendasi Profesional</h2>
-                <p class="text-slate-500 dark:text-slate-400 text-sm mt-2">Ulasan dari pembimbing lapangan, guru, rekan kerja, dan mitra jaringan</p>
+                <p class="text-slate-500 dark:text-slate-400 text-sm mt-2">Ulasan dari pembimbing sekolah, pembimbing LKS, pembimbing lapangan, dan mitra</p>
             </div>
 
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                 <!-- Testimoni 1 -->
+                <div class="p-6 rounded-2xl bg-slate-50 dark:bg-slate-950 border border-slate-200/80 dark:border-slate-800/80 shadow-sm flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 mb-3">
+                            <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                            <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                            <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                            <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                            <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                        </div>
+                        <p class="text-slate-600 dark:text-slate-400 text-xs italic leading-relaxed mb-4">
+                            "Gilbran menunjukkan dedikasi tinggi dan pemahaman praktis yang luar biasa dalam bidang teknik jaringan serta laboratorium komputer sekolah."
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-slate-200/60 dark:border-slate-800/60 flex items-center gap-3">
+                        <div class="w-9 h-9 rounded-full bg-purple-500/20 text-purple-600 dark:text-purple-400 flex items-center justify-center font-bold text-xs">AS</div>
+                        <div>
+                            <h4 class="font-bold text-sm">Bp. Agus Susanto, M.Kom.</h4>
+                            <p class="text-[11px] text-slate-500 dark:text-slate-400">Kepala Sekolah / Kepala Lab</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimoni 2 -->
+                <div class="p-6 rounded-2xl bg-slate-50 dark:bg-slate-950 border border-slate-200/80 dark:border-slate-800/80 shadow-sm flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 mb-3">
+                            <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                            <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                            <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                            <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                            <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                        </div>
+                        <p class="text-slate-600 dark:text-slate-400 text-xs italic leading-relaxed mb-4">
+                            "Kemampuan analisis topologi jaringan dan pengkabelan terstruktur Gilbran sangat siap diuji saat persiapan hingga kompetisi LKS TKJ."
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-slate-200/60 dark:border-slate-800/60 flex items-center gap-3">
+                        <div class="w-9 h-9 rounded-full bg-amber-500/20 text-amber-600 dark:text-amber-400 flex items-center justify-center font-bold text-xs">DR</div>
+                        <div>
+                            <h4 class="font-bold text-sm">Sdr. Dafa Al Rafi</h4>
+                            <p class="text-[11px] text-slate-500 dark:text-slate-400">Pembimbing LKS TKJ</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimoni 3 -->
                 <div class="p-6 rounded-2xl bg-slate-50 dark:bg-slate-950 border border-slate-200/80 dark:border-slate-800/80 shadow-sm flex flex-col justify-between">
                     <div>
                         <div class="flex text-amber-400 mb-3">
@@ -518,36 +563,13 @@
                     <div class="pt-4 border-t border-slate-200/60 dark:border-slate-800/60 flex items-center gap-3">
                         <div class="w-9 h-9 rounded-full bg-sky-500/20 text-sky-600 dark:text-sky-400 flex items-center justify-center font-bold text-xs">HP</div>
                         <div>
-                            <h4 class="font-bold text-sm">Bp. Ulil</h4>
+                            <h4 class="font-bold text-sm">Bp. Hendra Prasetyo</h4>
                             <p class="text-[11px] text-slate-500 dark:text-slate-400">Senior Field Engineer • PT Jatara</p>
                         </div>
                     </div>
                 </div>
 
-                <!-- Testimoni 2 -->
-                <div class="p-6 rounded-2xl bg-slate-50 dark:bg-slate-950 border border-slate-200/80 dark:border-slate-800/80 shadow-sm flex flex-col justify-between">
-                    <div>
-                        <div class="flex text-amber-400 mb-3">
-                            <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
-                            <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
-                            <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
-                            <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
-                            <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
-                        </div>
-                        <p class="text-slate-600 dark:text-slate-400 text-xs italic leading-relaxed mb-4">
-                            "Dedikasi Gilbran dalam menguasai topologi Cisco dan MikroTik sangat luar biasa. Terbukti dengan pencapaiannya pada ajang LKS TKJ."
-                        </p>
-                    </div>
-                    <div class="pt-4 border-t border-slate-200/60 dark:border-slate-800/60 flex items-center gap-3">
-                        <div class="w-9 h-9 rounded-full bg-amber-500/20 text-amber-600 dark:text-amber-400 flex items-center justify-center font-bold text-xs">RW</div>
-                        <div>
-                            <h4 class="font-bold text-sm">Bp. Dafa alrafi, S.Kom.</h4>
-                            <p class="text-[11px] text-slate-500 dark:text-slate-400">Guru Pembimbing LKS TKJ</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Testimoni 3 -->
+                <!-- Testimoni 4 -->
                 <div class="p-6 rounded-2xl bg-slate-50 dark:bg-slate-950 border border-slate-200/80 dark:border-slate-800/80 shadow-sm flex flex-col justify-between">
                     <div>
                         <div class="flex text-amber-400 mb-3">
@@ -564,13 +586,13 @@
                     <div class="pt-4 border-t border-slate-200/60 dark:border-slate-800/60 flex items-center gap-3">
                         <div class="w-9 h-9 rounded-full bg-indigo-500/20 text-indigo-600 dark:text-indigo-400 flex items-center justify-center font-bold text-xs">DA</div>
                         <div>
-                            <h4 class="font-bold text-sm">Mas Muhammad haidar</h4>
+                            <h4 class="font-bold text-sm">Mas Dimas Ardiansyah</h4>
                             <p class="text-[11px] text-slate-500 dark:text-slate-400">Field Technician • Partner Lapangan</p>
                         </div>
                     </div>
                 </div>
 
-                <!-- Testimoni 4 -->
+                <!-- Testimoni 5 -->
                 <div class="p-6 rounded-2xl bg-slate-50 dark:bg-slate-950 border border-slate-200/80 dark:border-slate-800/80 shadow-sm flex flex-col justify-between">
                     <div>
                         <div class="flex text-amber-400 mb-3">
@@ -587,31 +609,8 @@
                     <div class="pt-4 border-t border-slate-200/60 dark:border-slate-800/60 flex items-center gap-3">
                         <div class="w-9 h-9 rounded-full bg-emerald-500/20 text-emerald-600 dark:text-emerald-400 flex items-center justify-center font-bold text-xs">BS</div>
                         <div>
-                            <h4 class="font-bold text-sm">Bp. Imam tohari</h4>
-                            <p class="text-[11px] text-slate-500 dark:text-slate-400">Owner RT RW NET</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Testimoni 5 -->
-                <div class="p-6 rounded-2xl bg-slate-50 dark:bg-slate-950 border border-slate-200/80 dark:border-slate-800/80 shadow-sm flex flex-col justify-between">
-                    <div>
-                        <div class="flex text-amber-400 mb-3">
-                            <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
-                            <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
-                            <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
-                            <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
-                            <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
-                        </div>
-                        <p class="text-slate-600 dark:text-slate-400 text-xs italic leading-relaxed mb-4">
-                            "Pemahaman praktis Gilbran mengenai pengkabelan terstruktur Cat6, VLAN, dan penggunaan OTDR sangat menonjol di antara teman seangkatannya."
-                        </p>
-                    </div>
-                    <div class="pt-4 border-t border-slate-200/60 dark:border-slate-800/60 flex items-center gap-3">
-                        <div class="w-9 h-9 rounded-full bg-purple-500/20 text-purple-600 dark:text-purple-400 flex items-center justify-center font-bold text-xs">AS</div>
-                        <div>
-                            <h4 class="font-bold text-sm">Bp. Agus Susanto, S.Kom.</h4>
-                            <p class="text-[11px] text-slate-500 dark:text-slate-400">Kepala Laboratorium TKJ & Kepala sekolah</p>
+                            <h4 class="font-bold text-sm">Bp. Budi Santoso</h4>
+                            <p class="text-[11px] text-slate-500 dark:text-slate-400">Owner Internet Cafe & Point Kediri</p>
                         </div>
                     </div>
                 </div>
@@ -668,7 +667,7 @@
         <div class="max-w-6xl mx-auto px-4">
             <div class="text-center mb-8">
                 <h2 class="text-3xl font-bold">Galeri Dokumentasi Lapangan</h2>
-                <p class="text-slate-500 dark:text-slate-400 text-sm mt-2">Foto asli kegiatan praktikum, pengujian alat, dan kompetisi</p>
+                <p class="text-slate-500 dark:text-slate-400 text-sm mt-2">Foto asli kegiatan praktikum, pengujian alat, dan proyek</p>
             </div>
 
             <!-- Filter Buttons -->
@@ -722,15 +721,15 @@
     <footer class="mt-auto bg-slate-900 text-white py-12 border-t border-slate-800">
         <div class="max-w-6xl mx-auto px-4 text-center">
             <div class="flex justify-center items-center gap-4 mb-6">
-                <a href="https://www.linkedin.com/in/ahmad-gilbran-900684423?utm_source=share_via&utm_content=profile&utm_medium=member_ios" target="_blank" class="p-3 rounded-full bg-slate-800 hover:bg-sky-600 transition text-white">
+                <a href="https://www.linkedin.com/in/ahmad-gilbran-900684423?utm_source=share_via&utm_content=profile&utm_medium=member_ios" target="_blank" class="p-3 rounded-full bg-slate-800 hover:bg-sky-600 transition text-white" title="LinkedIn">
                     <i data-lucide="linkedin" class="w-5 h-5"></i>
                 </a>
-                <a href="https://wa.me/6285946300565" target="_blank" class="p-3 rounded-full bg-slate-800 hover:bg-emerald-600 transition text-white">
+                <a href="https://wa.me/6285946300565" target="_blank" class="p-3 rounded-full bg-slate-800 hover:bg-emerald-600 transition text-white" title="WhatsApp">
                     <i data-lucide="message-square" class="w-5 h-5"></i>
                 </a>
-                <button onclick="copyToClipboard('ahmadgilbranalanshary@gmail.com', 'Email berhasil disalin!')" class="p-3 rounded-full bg-slate-800 hover:bg-indigo-600 transition text-white" title="Salin Email">
+                <a href="mailto:ahmadgilbranalanshary@gmail.com" class="p-3 rounded-full bg-slate-800 hover:bg-red-600 transition text-white" title="Kirim Email">
                     <i data-lucide="mail" class="w-5 h-5"></i>
-                </button>
+                </a>
             </div>
             <p class="text-slate-400 text-sm">
                 &copy; {{ date('Y') }} <span class="text-white font-semibold">Ahmad Gilbran</span>. Specialist Network & Fiber Optik Kediri.
@@ -807,20 +806,6 @@
                     item.style.display = 'none';
                 }
             });
-        }
-
-        // Copy to Clipboard + Toast
-        function copyToClipboard(text, message) {
-            navigator.clipboard.writeText(text);
-            const toast = document.getElementById('toast');
-            const toastMsg = document.getElementById('toast-message');
-            
-            toastMsg.innerText = message;
-            toast.classList.remove('translate-y-20', 'opacity-0');
-            
-            setTimeout(() => {
-                toast.classList.add('translate-y-20', 'opacity-0');
-            }, 2500);
         }
     </script>
 </body>
