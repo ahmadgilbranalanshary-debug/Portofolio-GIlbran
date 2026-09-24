@@ -481,7 +481,7 @@
                     </div>
                 </div>
                 <div class="relative z-10 shrink-0">
-                    <a href="https://wa.me/6281234567890" target="_blank" class="px-6 py-3.5 bg-sky-500 hover:bg-sky-400 text-white font-bold rounded-2xl shadow-lg transition flex items-center gap-2 text-sm">
+                    <a href="https://wa.me/6285946300565" target="_blank" class="px-6 py-3.5 bg-sky-500 hover:bg-sky-400 text-white font-bold rounded-2xl shadow-lg transition flex items-center gap-2 text-sm">
                         <i data-lucide="message-square" class="w-4 h-4"></i> Diskusi Proyek Lapangan
                     </a>
                 </div>
@@ -725,10 +725,10 @@
                 <a href="https://www.linkedin.com/in/ahmad-gilbran-900684423?utm_source=share_via&utm_content=profile&utm_medium=member_ios" target="_blank" class="p-3 rounded-full bg-slate-800 hover:bg-sky-600 transition text-white">
                     <i data-lucide="linkedin" class="w-5 h-5"></i>
                 </a>
-                <a href="https://wa.me/6281234567890" target="_blank" class="p-3 rounded-full bg-slate-800 hover:bg-emerald-600 transition text-white">
+                <a href="https://wa.me/6285946300565" target="_blank" class="p-3 rounded-full bg-slate-800 hover:bg-emerald-600 transition text-white">
                     <i data-lucide="message-square" class="w-5 h-5"></i>
                 </a>
-                <button onclick="copyToClipboard('gilbran@example.com', 'Email berhasil disalin!')" class="p-3 rounded-full bg-slate-800 hover:bg-indigo-600 transition text-white" title="Salin Email">
+                <button onclick="copyToClipboard('ahmadgilbranalanshary.com', 'Email berhasil disalin!')" class="p-3 rounded-full bg-slate-800 hover:bg-indigo-600 transition text-white" title="Salin Email">
                     <i data-lucide="mail" class="w-5 h-5"></i>
                 </button>
             </div>
