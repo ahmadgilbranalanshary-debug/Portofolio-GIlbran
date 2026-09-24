@@ -28,233 +28,246 @@
 </head>
 <body class="bg-gray-50 text-gray-900 antialiased selection:bg-black selection:text-white">
 
-    <!-- Navbar -->
-    <nav class="fixed w-full bg-white/90 backdrop-blur-sm border-b border-gray-100 z-50">
+    <!-- NAVBAR -->
+    <nav class="fixed w-full bg-white/90 backdrop-blur-sm border-b border-gray-100 z-40">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between h-16">
                 <div class="flex items-center">
-                    <a href="#" class="text-xl font-bold tracking-tighter">AGA.</a>
+                    <span class="font-bold text-xl tracking-tight">GILBRAN.</span>
                 </div>
-                <!-- Desktop Menu -->
-                <div class="hidden md:flex items-center space-x-8">
-                    <a href="#about" class="text-gray-600 hover:text-black transition">Tentang Saya</a>
-                    <a href="#skills" class="text-gray-600 hover:text-black transition">Keahlian</a>
-                    <a href="#experience" class="text-gray-600 hover:text-black transition">Pengalaman</a>
-                    <a href="#contact" class="px-5 py-2 bg-black text-white rounded hover:bg-gray-800 transition">Hubungi Saya</a>
+                <div class="hidden md:flex items-center space-x-8 text-sm font-medium text-gray-600">
+                    <a href="#about" class="hover:text-black transition">Tentang Saya</a>
+                    <a href="#experience" class="hover:text-black transition">Pengalaman</a>
+                    <a href="#tools" class="hover:text-black transition">Tools</a>
+                    <a href="#certifications" class="hover:text-black transition">Sertifikasi</a>
+                    <a href="#projects" class="hover:text-black transition">Galeri</a>
+                    <a href="https://wa.me/6281234567890" target="_blank" class="px-4 py-2 bg-black text-white rounded-lg hover:bg-gray-800 transition">Hubungi Saya</a>
                 </div>
             </div>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section id="hero" class="pt-32 pb-20 px-4 min-h-screen flex items-center fade-in">
-        <div class="max-w-6xl mx-auto text-center">
-            <h1 class="text-5xl md:text-7xl font-bold tracking-tight mb-4">
-                AHMAD GILBRAN AL ANSHARY
+    <!-- HERO SECTION -->
+    <section id="about" class="pt-32 pb-20 px-4">
+        <div class="max-w-4xl mx-auto text-center fade-in">
+            <span class="px-3 py-1 bg-gray-100 text-gray-800 text-xs font-semibold rounded-full uppercase tracking-wider">Teknik Komputer & Jaringan</span>
+            <h1 class="text-4xl sm:text-6xl font-extrabold text-gray-900 mt-6 tracking-tight">
+                Ahmad Gilbran
             </h1>
-            <p class="text-xl md:text-2xl text-gray-500 font-light mb-8">
-                Pelajar TKJ | Fiber Optik | Network Troubleshooting
+            <p class="mt-4 text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed">
+                Spesialis Jaringan Komputer, Fiber Optik (*Fusion Splicing* & OTDR), serta Konfigurasi Router & Switch.
             </p>
-            <p class="max-w-2xl mx-auto text-gray-600 mb-10">
-                Saya adalah pelajar SMK Muhammadiyah 2 Kota Kediri yang memiliki ketertarikan pada jaringan komputer, fiber optik, splicing, dan troubleshooting jaringan.
-            </p>
-            <div class="flex flex-col sm:flex-row justify-center gap-4">
-    <a href="#about" class="px-8 py-3 border border-black text-black font-medium rounded">Tentang Saya</a>
-    <a href="#contact" class="px-8 py-3 bg-black text-white font-medium rounded">Hubungi Saya</a>
-    
-    <!-- TOMBOL UNDUH CV -->
-    <a href="{{ asset('cv-ahmad-gilbran.pdf') }}" download class="px-8 py-3 bg-emerald-600 text-white font-medium rounded hover:bg-emerald-700 transition inline-flex items-center justify-center gap-2">
-        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-        </svg>
-        <span>Unduh CV</span>
-    </a>
-        </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="py-20 bg-white">
-        <div class="max-w-4xl mx-auto px-4 text-center">
-            <h2 class="text-3xl font-bold mb-8">Tentang Saya</h2>
-            <p class="text-gray-600 text-lg leading-relaxed mb-10">
-                Saya merupakan pelajar jurusan Teknik Komputer dan Jaringan yang memiliki ketertarikan pada dunia jaringan komputer dan teknologi. Saya memiliki pengalaman belajar dan praktik dalam fiber optik, splicing, serta troubleshooting jaringan. Saya terus mengembangkan kemampuan teknis dan pengalaman untuk meningkatkan kompetensi di bidang teknologi jaringan.
-            </p>
-            <div class="inline-block text-left bg-gray-50 p-6 rounded-lg border border-gray-100 shadow-sm w-full md:w-auto">
-                <ul class="space-y-3 text-gray-700">
-                    <li><strong>Nama:</strong> Ahmad Gilbran Al Anshary</li>
-                    <li><strong>Status:</strong> Pelajar</li>
-                    <li><strong>Sekolah:</strong> SMK Muhammadiyah 2 Kota Kediri</li>
-                    <li><strong>Jurusan:</strong> Teknik Komputer dan Jaringan (TKJ)</li>
-                </ul>
+            
+            <!-- Tombol Action Hero -->
+            <div class="mt-8 flex flex-wrap justify-center gap-4">
+                <a href="{{ asset('cv-ahmad-gilbran.pdf') }}" download class="px-8 py-3 bg-black text-white font-medium rounded-xl hover:bg-gray-800 transition flex items-center gap-2">
+                    <i data-lucide="download" class="w-5 h-5"></i> Unduh CV
+                </a>
+                <button onclick="openCvModal()" class="px-8 py-3 border border-gray-300 text-gray-800 font-medium rounded-xl hover:bg-gray-100 transition flex items-center gap-2">
+                    <i data-lucide="eye" class="w-5 h-5"></i> Intip CV
+                </button>
             </div>
         </div>
     </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="py-20 bg-gray-50">
-        <div class="max-w-6xl mx-auto px-4">
-            <h2 class="text-3xl font-bold mb-12 text-center">Keahlian</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                <!-- Skill 1 -->
-                <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition hover:-translate-y-1">
-                    <i data-lucide="cable" class="w-8 h-8 mb-4 text-black"></i>
-                    <h3 class="font-semibold text-lg mb-2">Fiber Optik</h3>
-                    <p class="text-gray-500 text-sm">Instalasi dan pemahaman mendalam mengenai infrastruktur jaringan fiber optik.</p>
-                </div>
-                <!-- Skill 2 -->
-                <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition hover:-translate-y-1">
-                    <i data-lucide="plug" class="w-8 h-8 mb-4 text-black"></i>
-                    <h3 class="font-semibold text-lg mb-2">Splicing</h3>
-                    <p class="text-gray-500 text-sm">Kemampuan melakukan penyambungan kabel fiber optik menggunakan splicer.</p>
-                </div>
-                <!-- Skill 3 -->
-                <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition hover:-translate-y-1">
-                    <i data-lucide="activity" class="w-8 h-8 mb-4 text-black"></i>
-                    <h3 class="font-semibold text-lg mb-2">Network Troubleshooting</h3>
-                    <p class="text-gray-500 text-sm">Analisis dan perbaikan masalah konektivitas pada jaringan komputer.</p>
-                </div>
-                <!-- Skill 4 -->
-                <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition hover:-translate-y-1">
-                    <i data-lucide="network" class="w-8 h-8 mb-4 text-black"></i>
-                    <h3 class="font-semibold text-lg mb-2">Computer Networking</h3>
-                    <p class="text-gray-500 text-sm">Konfigurasi dasar dan menengah untuk topologi jaringan LAN/WAN.</p>
+    <!-- EXPERIENCE & ACHIEVEMENT SECTION -->
+    <section id="experience" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-12">
+            <!-- Experience -->
+            <div>
+                <h2 class="text-3xl font-bold mb-8 flex items-center gap-2">
+                    <i data-lucide="briefcase" class="w-6 h-6"></i> Pengalaman
+                </h2>
+                <div class="border-l-2 border-gray-200 pl-6 relative space-y-6">
+                    <div>
+                        <div class="absolute w-3 h-3 bg-black rounded-full -left-[7px] top-2"></div>
+                        <h3 class="font-bold text-xl">PT Jatara</h3>
+                        <p class="text-gray-500 text-sm mb-2">Praktik Kerja Lapangan (PKL) • Teknisi Jaringan</p>
+                        <ul class="list-disc list-inside text-gray-600 space-y-1 text-sm mt-2">
+                            <li>Penyambungan serat optik (*Fusion Splicing*) & pengukuran OTDR.</li>
+                            <li>*Troubleshooting* & perbaikan instalasi kabel LAN / Fiber Optik.</li>
+                            <li>Pemasangan & konfigurasi perangkat ONT pelanggan.</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
 
-   <!-- Experience & Achievement Section -->
-<section id="experience" class="py-20 bg-white">
-    <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-12">
-        <!-- Experience -->
-        <div>
-            <h2 class="text-3xl font-bold mb-8 flex items-center gap-2">
-                <i data-lucide="briefcase" class="w-6 h-6"></i> Pengalaman
-            </h2>
-            <div class="border-l-2 border-gray-200 pl-6 relative space-y-6">
-                <div>
-                    <div class="absolute w-3 h-3 bg-black rounded-full -left-[7px] top-2"></div>
-                    <h3 class="font-bold text-xl">PT Jatara</h3>
-                    <p class="text-gray-500 text-sm mb-2">Praktik Kerja Lapangan (PKL) • Teknisi Jaringan</p>
-                    <ul class="list-disc list-inside text-gray-600 space-y-1 text-sm mt-2">
-                        <li>Penyambungan serat optik (*Fusion Splicing*) & pengukuran OTDR.</li>
-                        <li>*Troubleshooting* & perbaikan instalasi kabel LAN / Fiber Optik.</li>
-                        <li>Pemasangan & konfigurasi perangkat ONT pelanggan.</li>
+            <!-- Achievement -->
+            <div>
+                <h2 class="text-3xl font-bold mb-8 flex items-center gap-2">
+                    <i data-lucide="award" class="w-6 h-6"></i> Prestasi
+                </h2>
+                <div class="bg-gray-50 p-6 rounded-xl border border-gray-100">
+                    <h3 class="font-bold text-xl mb-1">Juara Lomba Kompetensi Siswa (LKS)</h3>
+                    <p class="text-gray-500 text-sm mb-3">Bidang Teknik Komputer & Jaringan</p>
+                    <ul class="list-disc list-inside text-gray-600 space-y-1 text-sm">
+                        <li>Desain & simulasi topologi jaringan.</li>
+                        <li>Pengkabelan terstruktur (*Structured Cabling*).</li>
+                        <li>Konfigurasi routing & *network security*.</li>
                     </ul>
                 </div>
             </div>
         </div>
+    </section>
 
-        <!-- Achievement -->
-        <div>
-            <h2 class="text-3xl font-bold mb-8 flex items-center gap-2">
-                <i data-lucide="award" class="w-6 h-6"></i> Prestasi
+    <!-- TOOLS SECTION -->
+    <section id="tools" class="py-16 bg-white border-t border-gray-100">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-8 flex items-center justify-center gap-2">
+                <i data-lucide="wrench" class="w-6 h-6"></i> Perangkat & Tools Utama
             </h2>
-            <div class="bg-gray-50 p-6 rounded-xl border border-gray-100">
-                <h3 class="font-bold text-xl mb-1">Juara Lomba Kompetensi Siswa (LKS)</h3>
-                <p class="text-gray-500 text-sm mb-3">Bidang Teknik Komputer & Jaringan</p>
-                <ul class="list-disc list-inside text-gray-600 space-y-1 text-sm">
-                    <li>Desain & simulasi topologi jaringan.</li>
-                    <li>Pengkabelan terstruktur (*Structured Cabling*).</li>
-                    <li>Konfigurasi routing & *network security*.</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Gallery / Projects Section -->
-<section id="projects" class="py-20 bg-gray-50">
-    <div class="max-w-6xl mx-auto px-4">
-        <h2 class="text-3xl font-bold text-center mb-4 flex items-center justify-center gap-2">
-            <i data-lucide="image" class="w-6 h-6"></i> Galeri Kegiatan & Proyek
-        </h2>
-        <p class="text-gray-500 text-center mb-12">Dokumentasi hasil praktikum, kompetisi, dan kegiatan lapangan.</p>
-
-        <div class="grid md:grid-cols-3 gap-6">
-            <!-- Foto 1: Splicing -->
-            <div class="bg-white rounded-xl overflow-hidden shadow-sm border border-gray-200 hover:shadow-md transition">
-                <img src="{{ asset('images/splicing.jpeg') }}" alt="Penyambungan Serat Optik" class="w-full h-48 object-cover">
-                <div class="p-5">
-                    <h4 class="font-bold text-lg mb-1">Penyambungan Serat Optik</h4>
-                    <p class="text-gray-600 text-sm">Praktikum penyambungan kabel fiber optik menggunakan Fusion Splicer dengan presisi tinggi.</p>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div class="p-4 bg-gray-50 rounded-xl border border-gray-200 flex items-center gap-3">
+                    <i data-lucide="cable" class="w-6 h-6 text-blue-600"></i>
+                    <span class="font-semibold text-sm">Fusion Splicer</span>
                 </div>
-            </div>
-
-            <!-- Foto 2: OTDR -->
-            <div class="bg-white rounded-xl overflow-hidden shadow-sm border border-gray-200 hover:shadow-md transition">
-                <img src="{{ asset('images/otdr.jpeg') }}" alt="Pengujian OTDR" class="w-full h-48 object-cover">
-                <div class="p-5">
-                    <h4 class="font-bold text-lg mb-1">Pengujian Redaman OTDR</h4>
-                    <p class="text-gray-600 text-sm">Pengujian dan analisis kualitas saluran kabel fiber optik untuk memastikan sinyal stabil.</p>
+                <div class="p-4 bg-gray-50 rounded-xl border border-gray-200 flex items-center gap-3">
+                    <i data-lucide="activity" class="w-6 h-6 text-emerald-600"></i>
+                    <span class="font-semibold text-sm">OTDR Meter</span>
                 </div>
-            </div>
-
-            <!-- Foto 3: LKS -->
-            <div class="bg-white rounded-xl overflow-hidden shadow-sm border border-gray-200 hover:shadow-md transition">
-                <img src="{{ asset('images/lks.jpeg') }}" alt="Kompetisi LKS TKJ" class="w-full h-48 object-cover">
-                <div class="p-5">
-                    <h4 class="font-bold text-lg mb-1">Kompetisi LKS TKJ</h4>
-                    <p class="text-gray-600 text-sm">Dokumentasi penerimaan kejuaraan LKS bidang teknik jaringan komputer.</p>
+                <div class="p-4 bg-gray-50 rounded-xl border border-gray-200 flex items-center gap-3">
+                    <i data-lucide="router" class="w-6 h-6 text-indigo-600"></i>
+                    <span class="font-semibold text-sm">MikroTik Router</span>
                 </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="py-20 bg-gray-50">
-        <div class="max-w-4xl mx-auto px-4 text-center">
-            <h2 class="text-3xl font-bold mb-4">Mari Berdiskusi</h2>
-            <p class="text-gray-500 mb-12">Silakan hubungi saya untuk keperluan profesional atau diskusi jaringan.</p>
-            
-            <form class="max-w-lg mx-auto text-left space-y-4 bg-white p-8 rounded-xl shadow-sm border border-gray-100">
-                <div>
-                    <label class="block text-sm font-medium mb-1">Nama Lengkap</label>
-                    <input type="text" class="w-full border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-black focus:outline-none" placeholder="Masukkan nama Anda">
+                <div class="p-4 bg-gray-50 rounded-xl border border-gray-200 flex items-center gap-3">
+                    <i data-lucide="terminal" class="w-6 h-6 text-gray-800"></i>
+                    <span class="font-semibold text-sm">Linux / CLI</span>
                 </div>
-                <div>
-                    <label class="block text-sm font-medium mb-1">Email</label>
-                    <input type="email" class="w-full border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-black focus:outline-none" placeholder="Masukkan email Anda">
-                </div>
-                <div>
-                    <label class="block text-sm font-medium mb-1">Pesan</label>
-                    <textarea rows="4" class="w-full border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-black focus:outline-none" placeholder="Tuliskan pesan Anda di sini..."></textarea>
-                </div>
-                <button type="button" onclick="alert('Ini adalah versi preview. Fitur form memerlukan setup backend Laravel.')" class="w-full bg-black text-white py-3 rounded-lg hover:bg-gray-800 transition font-medium">Kirim Pesan</button>
-            </form>
-
-            <div class="mt-12 flex justify-center space-x-6">
-                <!-- Tombol WhatsApp dengan kode negara Indonesia -->
-                <a href="https://wa.me/6285946300565" target="_blank" class="flex items-center gap-2 bg-[#25D366] text-white px-6 py-3 rounded-full hover:bg-green-600 transition shadow-sm">
-                    <i data-lucide="message-circle" class="w-5 h-5"></i>
-                    <span class="font-medium">WhatsApp</span>
-                </a>
-                <!-- Link Instagram -->
-                <a href="https://www.instagram.com/agill06__/" target="_blank" class="flex items-center gap-2 bg-gradient-to-tr from-yellow-400 to-purple-600 text-white px-6 py-3 rounded-full hover:opacity-90 transition shadow-sm">
-                    <i data-lucide="instagram" class="w-5 h-5"></i>
-                    <span class="font-medium">Instagram</span>
-                </a>
             </div>
         </div>
     </section>
 
-    <!-- ================= FOOTER ================= -->
-<footer class="bg-gray-900 text-white py-8 border-t border-gray-800">
-    <div class="max-w-6xl mx-auto px-4 text-center">
-        <p class="text-gray-400 text-sm">
-            &copy; {{ date('Y') }} <span class="text-white font-semibold">Ahmad Gilbran</span>. All rights reserved.
-        </p>
-        <p class="text-gray-500 text-xs mt-2">
-            Built with Laravel & Tailwind CSS
-        </p>
-    </div>
-</footer>
+    <!-- CERTIFICATIONS SECTION -->
+    <section id="certifications" class="py-16 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-8 flex items-center justify-center gap-2">
+                <i data-lucide="file-check" class="w-6 h-6"></i> Sertifikasi & Lisensi
+            </h2>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="p-6 bg-white rounded-xl border border-gray-200 flex justify-between items-center shadow-sm">
+                    <div>
+                        <h3 class="font-bold text-lg">Sertifikat PKL PT Jatara</h3>
+                        <p class="text-sm text-gray-500">Teknisi Jaringan & Fiber Optik</p>
+                    </div>
+                    <button onclick="openCvModal()" class="px-4 py-2 bg-gray-100 hover:bg-gray-200 text-sm font-medium rounded-lg text-gray-700 transition">Lihat Dokumen</button>
+                </div>
+                <div class="p-6 bg-white rounded-xl border border-gray-200 flex justify-between items-center shadow-sm">
+                    <div>
+                        <h3 class="font-bold text-lg">Sertifikat Kejuaraan LKS</h3>
+                        <p class="text-sm text-gray-500">Kompetensi Teknik Komputer & Jaringan</p>
+                    </div>
+                    <button onclick="openCvModal()" class="px-4 py-2 bg-gray-100 hover:bg-gray-200 text-sm font-medium rounded-lg text-gray-700 transition">Lihat Dokumen</button>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- GALLERY SECTION WITH FILTER -->
+    <section id="projects" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-4 flex items-center justify-center gap-2">
+                <i data-lucide="image" class="w-6 h-6"></i> Galeri Kegiatan & Proyek
+            </h2>
+            <p class="text-gray-500 text-center mb-8">Dokumentasi hasil praktikum, kompetisi, dan kegiatan lapangan.</p>
+
+            <!-- Filter Buttons -->
+            <div class="flex justify-center gap-3 mb-10">
+                <button onclick="filterGallery('all', this)" class="filter-btn px-5 py-2 rounded-full text-sm font-medium bg-black text-white border border-black transition">Semua</button>
+                <button onclick="filterGallery('fiber', this)" class="filter-btn px-5 py-2 rounded-full text-sm font-medium bg-gray-100 text-gray-700 border border-gray-200 hover:bg-gray-200 transition">Fiber Optik</button>
+                <button onclick="filterGallery('lks', this)" class="filter-btn px-5 py-2 rounded-full text-sm font-medium bg-gray-100 text-gray-700 border border-gray-200 hover:bg-gray-200 transition">Kompetisi LKS</button>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-6">
+                <!-- Foto 1: Splicing -->
+                <div class="gallery-item fiber bg-white rounded-xl overflow-hidden shadow-sm border border-gray-200 hover:shadow-md transition">
+                    <img src="{{ asset('images/splicing.jpeg') }}" alt="Penyambungan Serat Optik" class="w-full h-48 object-cover">
+                    <div class="p-5">
+                        <h4 class="font-bold text-lg mb-1">Penyambungan Serat Optik</h4>
+                        <p class="text-gray-600 text-sm">Praktikum penyambungan kabel fiber optik menggunakan Fusion Splicer dengan presisi tinggi.</p>
+                    </div>
+                </div>
+
+                <!-- Foto 2: OTDR -->
+                <div class="gallery-item fiber bg-white rounded-xl overflow-hidden shadow-sm border border-gray-200 hover:shadow-md transition">
+                    <img src="{{ asset('images/otdr.jpeg') }}" alt="Pengujian OTDR" class="w-full h-48 object-cover">
+                    <div class="p-5">
+                        <h4 class="font-bold text-lg mb-1">Pengujian Redaman OTDR</h4>
+                        <p class="text-gray-600 text-sm">Pengujian dan analisis kualitas saluran kabel fiber optik untuk memastikan sinyal stabil.</p>
+                    </div>
+                </div>
+
+                <!-- Foto 3: LKS -->
+                <div class="gallery-item lks bg-white rounded-xl overflow-hidden shadow-sm border border-gray-200 hover:shadow-md transition">
+                    <img src="{{ asset('images/lks.jpeg') }}" alt="Kompetisi LKS TKJ" class="w-full h-48 object-cover">
+                    <div class="p-5">
+                        <h4 class="font-bold text-lg mb-1">Kompetisi LKS TKJ</h4>
+                        <p class="text-gray-600 text-sm">Dokumentasi pengerjaan modul ujian LKS bidang teknik jaringan komputer.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-gray-900 text-white py-8 border-t border-gray-800">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <p class="text-gray-400 text-sm">
+                &copy; {{ date('Y') }} <span class="text-white font-semibold">Ahmad Gilbran</span>. All rights reserved.
+            </p>
+            <p class="text-gray-500 text-xs mt-2">
+                Built with Laravel & Tailwind CSS
+            </p>
+        </div>
+    </footer>
+
+    <!-- MODAL PREVIEW CV -->
+    <div id="cvModal" class="fixed inset-0 bg-black/70 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
+        <div class="bg-white rounded-2xl w-full max-w-4xl h-[85vh] flex flex-col overflow-hidden shadow-2xl relative">
+            <div class="p-4 border-b flex justify-between items-center bg-gray-50">
+                <h3 class="font-bold text-gray-800">Pratinjau CV - Ahmad Gilbran</h3>
+                <button onclick="closeCvModal()" class="p-2 hover:bg-gray-200 rounded-full transition">
+                    <i data-lucide="x" class="w-6 h-6 text-gray-600"></i>
+                </button>
+            </div>
+            <div class="flex-1">
+                <iframe src="{{ asset('cv-ahmad-gilbran.pdf') }}" class="w-full h-full"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <!-- SCRIPTS -->
     <script>
-        // Render ikon Lucide
+        // Initialize Lucide Icons
         lucide.createIcons();
+
+        // Modal Handlers
+        function openCvModal() {
+            document.getElementById('cvModal').classList.remove('hidden');
+        }
+
+        function closeCvModal() {
+            document.getElementById('cvModal').classList.add('hidden');
+        }
+
+        // Gallery Filter Handler
+        function filterGallery(category, btnElement) {
+            const items = document.querySelectorAll('.gallery-item');
+            const buttons = document.querySelectorAll('.filter-btn');
+
+            buttons.forEach(btn => {
+                btn.className = "filter-btn px-5 py-2 rounded-full text-sm font-medium bg-gray-100 text-gray-700 border border-gray-200 hover:bg-gray-200 transition";
+            });
+
+            btnElement.className = "filter-btn px-5 py-2 rounded-full text-sm font-medium bg-black text-white border border-black transition";
+
+            items.forEach(item => {
+                if (category === 'all' || item.classList.contains(category)) {
+                    item.style.display = 'block';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        }
     </script>
 </body>
 </html>
