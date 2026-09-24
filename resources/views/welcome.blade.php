@@ -142,7 +142,7 @@
                     <i data-lucide="eye" class="w-4 h-4 text-sky-500"></i> Intip CV
                 </button>
 
-                <button onclick="copyToClipboard('gilbran@example.com', 'Email berhasil disalin!')" class="p-3 bg-white dark:bg-slate-900 hover:bg-slate-50 dark:hover:bg-slate-800 text-slate-600 dark:text-slate-400 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm transition" title="Salin Email">
+                <button onclick="copyToClipboard('ahmadgilbranalanshary@gmail.com', 'Email berhasil disalin!')" class="p-3 bg-white dark:bg-slate-900 hover:bg-slate-50 dark:hover:bg-slate-800 text-slate-600 dark:text-slate-400 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm transition" title="Salin Email">
                     <i data-lucide="copy" class="w-5 h-5"></i>
                 </button>
             </div>
@@ -728,7 +728,7 @@
                 <a href="https://wa.me/6285946300565" target="_blank" class="p-3 rounded-full bg-slate-800 hover:bg-emerald-600 transition text-white">
                     <i data-lucide="message-square" class="w-5 h-5"></i>
                 </a>
-                <button onclick="copyToClipboard('ahmadgilbranalanshary.com', 'Email berhasil disalin!')" class="p-3 rounded-full bg-slate-800 hover:bg-indigo-600 transition text-white" title="Salin Email">
+                <button onclick="copyToClipboard('ahmadgilbranalanshary@gmail.com', 'Email berhasil disalin!')" class="p-3 rounded-full bg-slate-800 hover:bg-indigo-600 transition text-white" title="Salin Email">
                     <i data-lucide="mail" class="w-5 h-5"></i>
                 </button>
             </div>
