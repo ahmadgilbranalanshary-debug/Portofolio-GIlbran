@@ -88,7 +88,7 @@
                         <i data-lucide="moon" class="w-4 h-4 block dark:hidden text-slate-700"></i>
                     </button>
 
-                    <a href="https://wa.me/6281234567890" target="_blank" class="px-4 py-2 rounded-xl bg-slate-900 hover:bg-slate-800 dark:bg-sky-500 dark:hover:bg-sky-400 text-white font-semibold text-xs sm:text-sm shadow-md transition flex items-center gap-2">
+                    <a href="https://wa.me/6285946300565" target="_blank" class="px-4 py-2 rounded-xl bg-slate-900 hover:bg-slate-800 dark:bg-sky-500 dark:hover:bg-sky-400 text-white font-semibold text-xs sm:text-sm shadow-md transition flex items-center gap-2">
                         <i data-lucide="message-square" class="w-4 h-4"></i>
                         <span class="hidden sm:inline">Hubungi WA</span>
                     </a>
