@@ -8,7 +8,7 @@
     <!-- Meta SEO & Social Media -->
     <meta name="description" content="Portofolio Ahmad Gilbran - Specialist Network, Fiber Optik Splicing, OTDR, & Troubleshooting Jaringan.">
     <meta property="og:title" content="Ahmad Gilbran - Network Specialist Portfolio">
-    <meta property="og:description" content="Eksplorasi pengalaman PKL PT Jatara, Sertifikasi, dan Dokumentasi Praktikum Fiber Optik Ahmad Gilbran.">
+    <meta property="og:description" content="Eksplorasi pengalaman PKL PT Jatara, Sertifikasi, Proyek Jaringan, dan Dokumentasi Praktikum Fiber Optik Ahmad Gilbran.">
     <meta property="og:image" content="{{ asset('images/splicing.jpeg') }}">
     <meta property="og:url" content="https://portofolio-gilbran-production.up.railway.app/">
 
@@ -71,6 +71,7 @@
                         <a href="#about" class="hover:text-sky-500 dark:hover:text-sky-400 transition">Tentang</a>
                         <a href="#experience" class="hover:text-sky-500 dark:hover:text-sky-400 transition">Pengalaman</a>
                         <a href="#tools" class="hover:text-sky-500 dark:hover:text-sky-400 transition">Tools</a>
+                        <a href="#projects-showcase" class="hover:text-sky-500 dark:hover:text-sky-400 transition">Proyek</a>
                         <a href="#certifications" class="hover:text-sky-500 dark:hover:text-sky-400 transition">Sertifikasi</a>
                         <a href="#projects" class="hover:text-sky-500 dark:hover:text-sky-400 transition">Galeri</a>
                     </div>
@@ -252,8 +253,111 @@
         </div>
     </section>
 
+    <!-- PROYEK JARINGAN (PROJECTS SHOWCASE SECTION) -->
+    <section id="projects-showcase" class="py-20 bg-white dark:bg-slate-900 border-t border-slate-200/60 dark:border-slate-800/60 transition-colors duration-300">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-sky-500/10 text-sky-600 dark:text-sky-400 text-xs font-bold uppercase tracking-wider mb-3">
+                    <i data-lucide="folder-git-2" class="w-4 h-4"></i> Project Portfolio
+                </div>
+                <h2 class="text-3xl font-bold">Proyek Jaringan & Implementasi</h2>
+                <p class="text-slate-500 dark:text-slate-400 text-sm mt-2">Daftar proyek teknis yang pernah dirancang dan diimplementasikan</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-6">
+                <!-- Proyek 1 -->
+                <div class="p-6 rounded-2xl bg-slate-50 dark:bg-slate-950 border border-slate-200/80 dark:border-slate-800/80 shadow-sm hover:shadow-md transition duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="px-3 py-1 rounded-lg bg-blue-500/10 text-blue-600 dark:text-blue-400 text-xs font-bold">FTTH & Fiber Optik</span>
+                            <span class="text-xs font-medium text-slate-400 flex items-center gap-1"><i data-lucide="check-circle" class="w-3.5 h-3.5 text-emerald-500"></i> Selesai</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Desain & Instalasi Jaringan FTTH (Fiber to the Home)</h3>
+                        <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed mb-4">
+                            Perancangan alur kable serat optik dari ODC ke ODP, penyambungan core presisi menggunakan Fusion Splicer, serta instalasi dan pembacaan signal redaman ONT pelanggan.
+                        </p>
+                    </div>
+                    <div>
+                        <div class="flex flex-wrap gap-2 pt-4 border-t border-slate-200/60 dark:border-slate-800/60">
+                            <span class="text-[11px] font-semibold px-2.5 py-1 rounded-md bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-300">Fusion Splicer</span>
+                            <span class="text-[11px] font-semibold px-2.5 py-1 rounded-md bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-300">OTDR</span>
+                            <span class="text-[11px] font-semibold px-2.5 py-1 rounded-md bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-300">OPM</span>
+                            <span class="text-[11px] font-semibold px-2.5 py-1 rounded-md bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-300">ONT Setup</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Proyek 2 -->
+                <div class="p-6 rounded-2xl bg-slate-50 dark:bg-slate-950 border border-slate-200/80 dark:border-slate-800/80 shadow-sm hover:shadow-md transition duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="px-3 py-1 rounded-lg bg-indigo-500/10 text-indigo-600 dark:text-indigo-400 text-xs font-bold">MikroTik Router</span>
+                            <span class="text-xs font-medium text-slate-400 flex items-center gap-1"><i data-lucide="check-circle" class="w-3.5 h-3.5 text-emerald-500"></i> Selesai</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Manajemen Hotspot & Bandwidth Queue MikroTik</h3>
+                        <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed mb-4">
+                            Konfigurasi RouterBOARD MikroTik untuk pembagian bandwidth otomatis (Queue Tree), pembuatan sistem login Hotspot Voucher (User Manager), serta pengamanan Port & Firewall.
+                        </p>
+                    </div>
+                    <div>
+                        <div class="flex flex-wrap gap-2 pt-4 border-t border-slate-200/60 dark:border-slate-800/60">
+                            <span class="text-[11px] font-semibold px-2.5 py-1 rounded-md bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-300">RouterOS</span>
+                            <span class="text-[11px] font-semibold px-2.5 py-1 rounded-md bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-300">Winbox</span>
+                            <span class="text-[11px] font-semibold px-2.5 py-1 rounded-md bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-300">Queue Tree</span>
+                            <span class="text-[11px] font-semibold px-2.5 py-1 rounded-md bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-300">Firewall NAT</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Proyek 3 -->
+                <div class="p-6 rounded-2xl bg-slate-50 dark:bg-slate-950 border border-slate-200/80 dark:border-slate-800/80 shadow-sm hover:shadow-md transition duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="px-3 py-1 rounded-lg bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 text-xs font-bold">Cisco Network</span>
+                            <span class="text-xs font-medium text-slate-400 flex items-center gap-1"><i data-lucide="check-circle" class="w-3.5 h-3.5 text-emerald-500"></i> LKS TKJ</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Simulasi Topologi Enterprise (Multi-VLAN & OSPF)</h3>
+                        <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed mb-4">
+                            Perancangan arsitektur jaringan skala menengah menggunakan Cisco Packet Tracer: konfigurasi Multi-VLAN, Inter-VLAN Routing, Dynamic Routing OSPF, dan Access Control List (ACL).
+                        </p>
+                    </div>
+                    <div>
+                        <div class="flex flex-wrap gap-2 pt-4 border-t border-slate-200/60 dark:border-slate-800/60">
+                            <span class="text-[11px] font-semibold px-2.5 py-1 rounded-md bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-300">Cisco Packet Tracer</span>
+                            <span class="text-[11px] font-semibold px-2.5 py-1 rounded-md bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-300">Multi-VLAN</span>
+                            <span class="text-[11px] font-semibold px-2.5 py-1 rounded-md bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-300">OSPF Routing</span>
+                            <span class="text-[11px] font-semibold px-2.5 py-1 rounded-md bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-300">ACL Security</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Proyek 4 -->
+                <div class="p-6 rounded-2xl bg-slate-50 dark:bg-slate-950 border border-slate-200/80 dark:border-slate-800/80 shadow-sm hover:shadow-md transition duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="px-3 py-1 rounded-lg bg-purple-500/10 text-purple-600 dark:text-purple-400 text-xs font-bold">Linux Server</span>
+                            <span class="text-xs font-medium text-slate-400 flex items-center gap-1"><i data-lucide="check-circle" class="w-3.5 h-3.5 text-emerald-500"></i> Home Lab</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Setup Web & DNS Server Berbasis Ubuntu Server</h3>
+                        <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed mb-4">
+                            Deployment server lokal menggunakan OS Ubuntu Server CLI: instalasi Apache/Nginx Web Server, konfigrasi domain lokal BIND9 DNS Server, serta monitoring log lalu lintas jaringan.
+                        </p>
+                    </div>
+                    <div>
+                        <div class="flex flex-wrap gap-2 pt-4 border-t border-slate-200/60 dark:border-slate-800/60">
+                            <span class="text-[11px] font-semibold px-2.5 py-1 rounded-md bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-300">Ubuntu Server</span>
+                            <span class="text-[11px] font-semibold px-2.5 py-1 rounded-md bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-300">Apache/Nginx</span>
+                            <span class="text-[11px] font-semibold px-2.5 py-1 rounded-md bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-300">BIND9 DNS</span>
+                            <span class="text-[11px] font-semibold px-2.5 py-1 rounded-md bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-300">SSH & CLI</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- CERTIFICATIONS SECTION -->
-    <section id="certifications" class="py-20 bg-white dark:bg-slate-900 border-t border-slate-200/60 dark:border-slate-800/60 transition-colors duration-300">
+    <section id="certifications" class="py-20 bg-slate-50 dark:bg-slate-950 transition-colors duration-300">
         <div class="max-w-6xl mx-auto px-4">
             <div class="text-center mb-12">
                 <h2 class="text-3xl font-bold">Sertifikasi & Lisensi Dokumen</h2>
@@ -262,7 +366,7 @@
 
             <div class="grid md:grid-cols-2 gap-6">
                 <!-- Cert 1 -->
-                <div class="p-6 rounded-2xl bg-slate-50 dark:bg-slate-950 border border-slate-200/80 dark:border-slate-800/80 flex justify-between items-center shadow-sm">
+                <div class="p-6 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200/80 dark:border-slate-800/80 flex justify-between items-center shadow-sm">
                     <div class="flex items-center gap-4">
                         <div class="w-12 h-12 rounded-xl bg-sky-500/10 text-sky-600 dark:text-sky-400 flex items-center justify-center shrink-0">
                             <i data-lucide="file-check" class="w-6 h-6"></i>
@@ -272,13 +376,13 @@
                             <p class="text-xs text-slate-500 dark:text-slate-400">Nilai Sangat Baik • Fiber Optik & LAN</p>
                         </div>
                     </div>
-                    <button onclick="openCvModal()" class="px-4 py-2 bg-white dark:bg-slate-800 hover:bg-slate-100 dark:hover:bg-slate-700 text-xs font-semibold rounded-xl border border-slate-200 dark:border-slate-700 transition">
+                    <button onclick="openCvModal()" class="px-4 py-2 bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 text-xs font-semibold rounded-xl border border-slate-200 dark:border-slate-700 transition">
                         Buka PDF
                     </button>
                 </div>
 
                 <!-- Cert 2 -->
-                <div class="p-6 rounded-2xl bg-slate-50 dark:bg-slate-950 border border-slate-200/80 dark:border-slate-800/80 flex justify-between items-center shadow-sm">
+                <div class="p-6 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200/80 dark:border-slate-800/80 flex justify-between items-center shadow-sm">
                     <div class="flex items-center gap-4">
                         <div class="w-12 h-12 rounded-xl bg-amber-500/10 text-amber-600 dark:text-amber-400 flex items-center justify-center shrink-0">
                             <i data-lucide="award" class="w-6 h-6"></i>
@@ -288,7 +392,7 @@
                             <p class="text-xs text-slate-500 dark:text-slate-400">Kompetensi Teknik Komputer & Jaringan</p>
                         </div>
                     </div>
-                    <button onclick="openCvModal()" class="px-4 py-2 bg-white dark:bg-slate-800 hover:bg-slate-100 dark:hover:bg-slate-700 text-xs font-semibold rounded-xl border border-slate-200 dark:border-slate-700 transition">
+                    <button onclick="openCvModal()" class="px-4 py-2 bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 text-xs font-semibold rounded-xl border border-slate-200 dark:border-slate-700 transition">
                         Buka PDF
                     </button>
                 </div>
@@ -297,7 +401,7 @@
     </section>
 
     <!-- GALLERY SECTION WITH FILTER -->
-    <section id="projects" class="py-20 bg-slate-50 dark:bg-slate-950 transition-colors duration-300">
+    <section id="projects" class="py-20 bg-white dark:bg-slate-900 border-t border-slate-200/60 dark:border-slate-800/60 transition-colors duration-300">
         <div class="max-w-6xl mx-auto px-4">
             <div class="text-center mb-8">
                 <h2 class="text-3xl font-bold">Galeri Dokumentasi Lapangan</h2>
@@ -307,13 +411,13 @@
             <!-- Filter Buttons -->
             <div class="flex justify-center gap-2 mb-10">
                 <button onclick="filterGallery('all', this)" class="filter-btn px-5 py-2 rounded-xl text-xs font-bold bg-slate-900 dark:bg-white text-white dark:text-slate-900 transition shadow-sm">Semua</button>
-                <button onclick="filterGallery('fiber', this)" class="filter-btn px-5 py-2 rounded-xl text-xs font-semibold bg-white dark:bg-slate-900 text-slate-600 dark:text-slate-400 border border-slate-200 dark:border-slate-800 hover:bg-slate-100 dark:hover:bg-slate-800 transition">Fiber Optik</button>
-                <button onclick="filterGallery('lks', this)" class="filter-btn px-5 py-2 rounded-xl text-xs font-semibold bg-white dark:bg-slate-900 text-slate-600 dark:text-slate-400 border border-slate-200 dark:border-slate-800 hover:bg-slate-100 dark:hover:bg-slate-800 transition">Kompetisi LKS</button>
+                <button onclick="filterGallery('fiber', this)" class="filter-btn px-5 py-2 rounded-xl text-xs font-semibold bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 border border-slate-200 dark:border-slate-700 hover:bg-slate-200 dark:hover:bg-slate-700 transition">Fiber Optik</button>
+                <button onclick="filterGallery('lks', this)" class="filter-btn px-5 py-2 rounded-xl text-xs font-semibold bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 border border-slate-200 dark:border-slate-700 hover:bg-slate-200 dark:hover:bg-slate-700 transition">Kompetisi LKS</button>
             </div>
 
             <div class="grid md:grid-cols-3 gap-6">
                 <!-- Foto 1 -->
-                <div class="gallery-item fiber group bg-white dark:bg-slate-900 rounded-2xl overflow-hidden border border-slate-200/80 dark:border-slate-800/80 shadow-sm hover:shadow-xl transition duration-300">
+                <div class="gallery-item fiber group bg-slate-50 dark:bg-slate-950 rounded-2xl overflow-hidden border border-slate-200/80 dark:border-slate-800/80 shadow-sm hover:shadow-xl transition duration-300">
                     <div class="overflow-hidden h-52 relative">
                         <img src="{{ asset('images/splicing.jpeg') }}" alt="Penyambungan Fiber Optik" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
                         <span class="absolute top-3 left-3 bg-slate-900/80 backdrop-blur-md text-white text-[10px] font-bold px-2.5 py-1 rounded-lg">Splicing</span>
@@ -325,7 +429,7 @@
                 </div>
 
                 <!-- Foto 2 -->
-                <div class="gallery-item fiber group bg-white dark:bg-slate-900 rounded-2xl overflow-hidden border border-slate-200/80 dark:border-slate-800/80 shadow-sm hover:shadow-xl transition duration-300">
+                <div class="gallery-item fiber group bg-slate-50 dark:bg-slate-950 rounded-2xl overflow-hidden border border-slate-200/80 dark:border-slate-800/80 shadow-sm hover:shadow-xl transition duration-300">
                     <div class="overflow-hidden h-52 relative">
                         <img src="{{ asset('images/otdr.jpeg') }}" alt="Pengujian OTDR" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
                         <span class="absolute top-3 left-3 bg-slate-900/80 backdrop-blur-md text-white text-[10px] font-bold px-2.5 py-1 rounded-lg">Measurement</span>
@@ -337,7 +441,7 @@
                 </div>
 
                 <!-- Foto 3 -->
-                <div class="gallery-item lks group bg-white dark:bg-slate-900 rounded-2xl overflow-hidden border border-slate-200/80 dark:border-slate-800/80 shadow-sm hover:shadow-xl transition duration-300">
+                <div class="gallery-item lks group bg-slate-50 dark:bg-slate-950 rounded-2xl overflow-hidden border border-slate-200/80 dark:border-slate-800/80 shadow-sm hover:shadow-xl transition duration-300">
                     <div class="overflow-hidden h-52 relative">
                         <img src="{{ asset('images/lks.jpeg') }}" alt="Kompetisi LKS TKJ" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
                         <span class="absolute top-3 left-3 bg-slate-900/80 backdrop-blur-md text-white text-[10px] font-bold px-2.5 py-1 rounded-lg">LKS TKJ</span>
@@ -417,7 +521,7 @@
             const buttons = document.querySelectorAll('.filter-btn');
 
             buttons.forEach(btn => {
-                btn.className = "filter-btn px-5 py-2 rounded-xl text-xs font-semibold bg-white dark:bg-slate-900 text-slate-600 dark:text-slate-400 border border-slate-200 dark:border-slate-800 hover:bg-slate-100 dark:hover:bg-slate-800 transition";
+                btn.className = "filter-btn px-5 py-2 rounded-xl text-xs font-semibold bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 border border-slate-200 dark:border-slate-700 hover:bg-slate-200 dark:hover:bg-slate-700 transition";
             });
 
             btnElement.className = "filter-btn px-5 py-2 rounded-xl text-xs font-bold bg-slate-900 dark:bg-white text-white dark:text-slate-900 transition shadow-sm";
